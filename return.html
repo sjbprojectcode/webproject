@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="return.css">
+</head>
+<body>
+
+
+<!-- Return Book Form -->
+<h2>Provide the details to return the book.</h2>
+<div class="container">
+<form id="returnBookForm">
+            <input type="text" id="bookID" placeholder="Book_ID" required>
+
+</form>
+<button type="submit" class="btn" onclick="openPopup()">Return</button>
+        <div class="popup" id="popup">
+           <img src="popimg.png"> 
+           <h2>Thank you!</h2>
+           <p>The book has successfully been returned. thanks!</p>
+           <button type="button" onclick="closePopup()">OK</button>
+        </div>
+      </div>
+     <script>
+          let popup = document.getElementById("popup");
+      
+          function openPopup(){
+              popup.classList.add("open-popup");
+          }
+          function closePopup(){
+              popup.classList.remove("open-popup");
+          }
+     </script>
+</body>
+</html>

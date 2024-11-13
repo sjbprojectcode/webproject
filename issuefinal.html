@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="issue.css">
+</head>
+<body>
+    <!-- Issue Book Form -->
+    <h2>Provide the details to issue the book.</h2>
+    <div class="container">
+        
+        <form id="issueBookForm">
+            <input type="text" id="bookId" placeholder="Book_ID" required>
+            
+            <input type="text" id="User" placeholder="User_Name" required>
+        </form>
+        <button type="submit" class="btn" onclick="openPopup()">Issue</button>
+        <div class="popup" id="popup">
+           <img src="popimg.png"> 
+           <h2>Thank you!</h2>
+           <p>The book has successfully been issued. thanks!</p>
+           <button type="button" onclick="closePopup()">OK</button>
+        </div>
+      </div>
+     <script>
+          let popup = document.getElementById("popup");
+      
+          function openPopup(){
+              popup.classList.add("open-popup");
+          }
+          function closePopup(){
+              popup.classList.remove("open-popup");
+          }
+     </script>
+</body>
+</html>

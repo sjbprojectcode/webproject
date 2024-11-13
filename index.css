@@ -1,0 +1,175 @@
+
+.parent {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.first{
+    display:grid;
+    background-color:rgb(175, 117, 8);
+    width:1082px;
+}
+.h1{
+    margin-left:15px;
+}
+.zero{
+    text-align:center;
+    color:white;
+
+}
+.grid-container > *{
+    color:white;
+    padding:7px;
+    font-size: 14px;
+    background-color:rgb(52, 49, 49);
+}
+.grid-container{
+    display:grid;
+    height:600px;
+    width:160px;
+}
+ .head{
+    background-color:rgba(0, 0, 0, 0.877);
+    font-weight:bold;
+    font-size:10px;
+}
+
+.h2{
+    margin-left:37px;
+    margin-top:30px;
+}
+ .image1{
+     background-color:rgb(255, 247, 247);
+     width:20px;
+     height:20px;
+     border-radius:98%;
+     display: block;
+     margin-left: 52px;
+     margin-right: auto;
+       }
+
+ .image1 > img{
+       float:left;
+ }
+
+ .correct{
+
+      width:10px;
+      height:10px;
+      border-radius:100%;
+ }
+ .third{
+    float:right;
+    position: absolute;
+    top: 58px;
+    left: 148px;
+    height:600px;
+    width: 942px;
+    background-color:rgb(66, 66, 68);
+    color:white;
+}
+
+ .blue1{
+        background-color:rgb(12, 189, 239);
+        position:relative;
+        top:100px;   
+    }
+ .green1{
+       background-color:rgba(96, 223, 96, 0.688);
+       position:relative;
+        top:100px; 
+       
+ }
+ .yellow1{
+       background-color:rgb(239, 148, 12);
+       position:relative;
+        top:100px;  
+    }
+ .red1{
+       background-color:rgb(239, 57, 12);
+       position:relative;
+        top:100px; 
+ }
+ .blue2{
+       
+       background-color:white;
+       position:relative;
+       top:180px;
+    }
+ .green2{
+       
+       background-color:white;
+       position:relative;
+       top:180px;
+ }
+ .yellow2{
+       background-color:white;
+       position:relative;
+       top:180px;
+ }
+ .red2{
+       background-color:white;
+       position:relative;
+       top:180px;
+ }
+
+ .third > div{
+    display:inline-flex;
+    flex-direction:row;
+    width:230px;
+    height:110px;
+ }
+ .bookimg{
+    margin-left:50px;
+ }
+
+.member{
+    margin-left:40px;
+}
+.mega{
+    margin-left:20%;
+}
+.text5{
+      margin-left:140px;
+      color:black;
+}
+.text6{
+    margin-left:140px;
+    color:black;
+}
+.text7{
+    margin-left:140px;
+    color:black;
+}
+.text8{
+    margin-left:140px;
+    color:black;
+}
+.DATE{
+    position:absolute;
+    height:110px;
+}
+
+.not{
+    position:absolute;
+    left:0.3px;
+    top:0.3px;
+    height:110px
+}
+.returned{
+    position:absolute;
+    width:105px;
+    height:110px;
+}
+.fly{
+    position:absolute;
+    width:105px;
+    height:110px;
+}
+
+
+ 
