@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Demo Management</title>
+</head>
+
+<body>
+  <div class="parent">
+
+    <div class="first">
+         <p class="zero">
+            Library Management
+         </p>
+    </div>      
+    
+    <div class="container">
+        <div class="item1"><img src="./admin.jpeg"  class="image1" alt="admin"><p class="h1">Admin <img src="./tick.jpg" alt="Tick" class="correct"> Online</p> </div>
+        <div class="head"><p class="h2">HEADER</p></div>
+        <div class="item2"><p class="h3"><a href="main.html">Dashboard</a></p></div>
+        <div class="item3"><p class="h4"><a href="members.html">Members</a></p></div>  
+        <div class="item4"><p class="h5"><a href="addbook.html">Add Books</a></p></div>
+        <div class="item5"><p class="h6"><a href="issuefinal.html">Issue</a></p></div>
+        <div class="item6"><p class="h7"><a href="return.html">Return</a></p></div>
+    </div>
+
+    <div class="third">
+        <div class="blue1">
+            <p class="text1"><span id="book-number">0</span><br><a src="addbooks.html">Books</a></p>
+            <img src="./book.png" class="bookimg">
+        </div>
+        
+        <!-- Members Box with Dynamic Count -->
+        <div class="green1">
+            <p class="text2"><span id="member-count">0</span> <br> Members</p>
+            <img src="./member.png" class="member">
+        </div>
+        
+        <div class="yellow1">
+            <p class="text3">1<br> NewsPapers</p>
+            <img src="./news.png" class="news">
+        </div>
+        <div class="red1">
+            <p class="text4">0 <br>Magazines</p>
+            <img src="./magazines.png" class="mega">
+        </div>
+        <div class="blue2">
+            <p class="text5">ISSUED <br>2</p>
+            <img src="./aero.png" class="fly">
+        </div>
+        <div class="green2">
+            <p class="text6">RETURNED <br>1</p>
+            <img src="./return.png" class="returned">
+        </div>
+        <div class="yellow2">
+            <p class="text7">NOT RETURNED<br>
+            <img src="no.png" class="not"></p>
+        </div>
+        <div class="red2">
+            <p class="text8">DATE TODAY</p>
+            <img src="./date.png" class="DATE">
+        </div>
+    </div>
+  </div> 
+  
+  <script src="script3.js"></script>
+  <script>
+    // Function to update the members count based on stored usernames
+    function updateMemberCount() {
+        // Retrieve usernames from localStorage or initialize with an empty array
+        let usernames = JSON.parse(localStorage.getItem('usernames')) || [];
+        // Update the member count on the page
+        document.getElementById('member-count').textContent = usernames.length;
+    }
+
+    // Call the function to initialize the member count on page load
+    window.onload = function() {
+        updateMemberCount();
+    };
+  </script>
+  
+</body>
+</html>
