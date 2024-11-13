@@ -1,0 +1,169 @@
+body {
+    margin: 0px;
+    padding: 0px;
+   
+
+}
+p{
+    text-align:center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:20px;
+}
+
+.first::before {
+    background-color: rgb(77, 94, 114);
+    /* background: url(/img/library.png); */
+    background-size: cover;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.83;
+}
+.faded{
+     opacity:0.8;
+     top:10px;
+     height:650px;
+     width:1535px;
+}
+
+.nav1 {
+    background-color: rgb(147 147 147 / 75%);
+    overflow: hidden;
+}
+
+.nav1 a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 34px;
+    font-family: "foliomedium", "Noto Sans", Arial, Helvetica, sans-serif;
+}
+
+.nav1 li {
+    display: block;
+    float: right;
+    list-style: none;
+}
+
+/*Hover section*/
+.nav1 a:hover {
+    text-decoration: underline;
+    color: rgba(19, 18, 18, 0.781);
+    transition: 1s;
+}
+
+.nav1:hover {
+    background-color: rgb(142, 133, 133);
+    transition: 2s;
+}
+
+/*bodysection*/
+
+#body1 h1 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+    color: aliceblue;
+}
+
+/*for book*/
+
+#Book1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 2px 15px;
+    justify-content: center;
+}
+
+#Book2 p {
+    /* background-image:url(/img/book2.png); */
+    background-color: antiquewhite;
+    width: 163px;
+    font-size: 25px;
+    margin: 20px 20px;
+    text-align: center;
+    color: rgb(30, 24, 24);
+    justify-content: center;
+    border: 2px solid rgb(10, 9, 9);
+    height: 225px;
+}
+#Book2 button{
+    position: relative;
+    left: 83px;
+    bottom: 56px;
+}
+.login-container {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 300px;
+        text-align: center;
+}
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.signup-link {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* for profile section */
+
+
+
+
+
